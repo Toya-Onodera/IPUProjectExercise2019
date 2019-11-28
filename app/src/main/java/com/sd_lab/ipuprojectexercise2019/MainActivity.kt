@@ -1,5 +1,6 @@
 package com.sd_lab.ipuprojectexercise2019
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -28,7 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         // QR での商品識別画面へ
         goQRItemSelectPageButton.setOnClickListener {
-            Toast.makeText(this, "04", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@MainActivity, QRReaderActivity::class.java)
+            startActivity(intent)
+//            Toast.makeText(this, "04", Toast.LENGTH_SHORT).show()
         }
     }
 }
