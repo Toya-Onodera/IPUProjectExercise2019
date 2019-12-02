@@ -24,37 +24,32 @@ class QRReaderActivity : AppCompatActivity() {
         setContentView(R.layout.activity_qrreader)
 
         // カメラの起動
-        //IntentIntegrator(this).initiateScan()
         qrScanIntegrator = IntentIntegrator(this)
-//        qrScanIntegrator?.setOrientationLocked(false)
-
-        qrReaderButton.setOnClickListener {
-//            Log.d("TEST", qrScanIntegrator.toString());
-            qrScanIntegrator?.initiateScan()
-        }
+        qrScanIntegrator?.setOrientationLocked(false)
+        qrScanIntegrator?.initiateScan()
     }
 
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
-//
-//        if (result != null) {
-//            if (result.contents == null) {
-//                Toast.makeText(this, result.contents, Toast.LENGTH_LONG).show()
-//            } else {
-//                // If QRCode contains data.
-//                try {
-//                    // Converting the data to json format
-//                    val obj = JSONObject(result.contents)
-//
-//                } catch (e: JSONException) {
-//                    e.printStackTrace()
-//
-//
-//                }
-//
-//            }
-//        } else {
-//            super.onActivityResult(requestCode, resultCode, data)
-//        }
-//    }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
+
+        if (result != null) {
+            if (result.contents == null) {
+                Toast.makeText(this, result.contents, Toast.LENGTH_LONG).show()
+            } else {
+                // If QRCode contains data.
+                try {
+                    // Converting the data to json format
+                    val obj = JSONObject(result.contents)
+
+                } catch (e: JSONException) {
+                    e.printStackTrace()
+
+
+                }
+
+            }
+        } else {
+            super.onActivityResult(requestCode, resultCode, data)
+        }
+    }
 }
