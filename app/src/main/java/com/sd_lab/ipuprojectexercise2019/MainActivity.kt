@@ -25,6 +25,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         // 商品準備状況確認画面へ
+        goSamplePageButton.setOnClickListener {
+            val intent = Intent(this, QRImageViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 商品準備状況確認画面へ
         goProgressPageButton.setOnClickListener {
             Toast.makeText(this, "03", Toast.LENGTH_SHORT).show()
         }

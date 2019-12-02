@@ -3,5 +3,6 @@
     <string name="bt_goItemPage">商品選択画面</string>
     <string name="bt_goPaymentPage">支払画面</string>
     <string name="bt_goProgressPage">商品準備状況確認画面</string>
+    <string name="bt_goQRSamplePage">QR サンプル</string>
     <string name="bt_goQRItemSelectPage">QRでの商品識別画面</string>
 </resources>
