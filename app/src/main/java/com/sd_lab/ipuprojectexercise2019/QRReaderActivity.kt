@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import android.widget.Toast
 import com.google.zxing.client.android.Intents
 
@@ -18,14 +19,18 @@ import org.json.JSONObject
 class QRReaderActivity : AppCompatActivity() {
 
     internal var qrScanIntegrator: IntentIntegrator? = null
+    private var tvResultName: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qrreader)
 
+        tvResultName = findViewById(R.id.tvResultText)
+
         // カメラの起動
         qrScanIntegrator = IntentIntegrator(this)
         qrScanIntegrator?.setOrientationLocked(false)
+        qrScanIntegrator?.setBeepEnabled(false)
         qrScanIntegrator?.initiateScan()
     }
 
@@ -33,14 +38,12 @@ class QRReaderActivity : AppCompatActivity() {
         val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
 
         if (result != null) {
-            // TODO: Kotlin には三項演算子がない
-            val resultStr = if (result.contents == "成功") true else false
+            Toast.makeText(this, result.contents, Toast.LENGTH_LONG).show()
 
-            // 利用者が購入したパン (QRコード) の場合
-            if (resultStr) {
-                // TODO: リザルト画面のアクティビティを表示する
-                Toast.makeText(this, "成功", Toast.LENGTH_LONG).show()
-            }
+            // TODO: Kotlin には三項演算子がない
+            val resultBoolean = if (result.contents == "成功") true else false
+            val resultShowText = if (resultBoolean) "選択した商品です" else "選択した商品では\nありません"
+            tvResultName?.setText(resultShowText)
         }
 
         else {
