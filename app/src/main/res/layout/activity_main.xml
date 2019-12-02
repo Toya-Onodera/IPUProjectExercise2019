@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bt_goProgressPage"
-        app:layout_constraintBottom_toTopOf="@+id/goQRItemSelectPageButton"
+        app:layout_constraintBottom_toTopOf="@+id/goSamplePageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +45,17 @@
         android:layout_height="wrap_content"
         android:text="@string/bt_goQRItemSelectPage"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goSamplePageButton" />
+
+    <Button
+        android:id="@+id/goSamplePageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_goQRSamplePage"
+        app:layout_constraintBottom_toTopOf="@+id/goQRItemSelectPageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
