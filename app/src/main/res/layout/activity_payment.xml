@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#03A9F4"
-        android:text="Button"
+        android:text="@string/tv_payment_paymentButton"
         android:textColor="#FAFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
+        android:text="@string/tv_payment_chooseCheck"
         app:layout_constraintBottom_toTopOf="@+id/paymentButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -32,7 +32,6 @@
         android:id="@+id/rgChoosePaymentMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/tv_paymentCheck"
         app:layout_constraintEnd_toStartOf="@+id/addNewPaymentButton"
         app:layout_constraintHorizontal_bias="0.5"
@@ -44,21 +43,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="RadioButton" />
+            android:text="@string/tv_payment_radio01" />
 
         <RadioButton
             android:id="@+id/rbForCreditCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="RadioButton" />
+            android:text="@string/tv_payment_radio02" />
 
         <RadioButton
             android:id="@+id/rbForPayPay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="RadioButton" />
+            android:text="@string/tv_payment_radio03" />
     </RadioGroup>
 
     <Button
@@ -76,9 +75,17 @@
         android:id="@+id/addNewPaymentTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/tv_payment_newPaymentHeading"
         app:layout_constraintBottom_toTopOf="@+id/addNewPaymentButton"
         app:layout_constraintStart_toStartOf="@+id/addNewPaymentButton" />
+
+    <TextView
+        android:id="@+id/addRadioPaymentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_payment_radioHeading"
+        app:layout_constraintBottom_toTopOf="@+id/rgChoosePaymentMode"
+        app:layout_constraintStart_toStartOf="@+id/rgChoosePaymentMode" />
 
     <ListView
         android:id="@+id/lvChooseItems"

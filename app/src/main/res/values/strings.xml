@@ -5,4 +5,11 @@
     <string name="bt_goProgressPage">商品準備状況確認画面</string>
     <string name="bt_goQRSamplePage">QR サンプル</string>
     <string name="bt_goQRItemSelectPage">QRでの商品識別画面</string>
+    <string name="tv_payment_radioHeading">支払い方法</string>
+    <string name="tv_payment_newPaymentHeading">別の支払い</string>
+    <string name="tv_payment_chooseCheck">以上の内容で注文を確定してよろしいでしょうか</string>
+    <string name="tv_payment_radio01">現金</string>
+    <string name="tv_payment_radio02">クレジットカード</string>
+    <string name="tv_payment_radio03">PayPay</string>
+    <string name="tv_payment_paymentButton">注文確定</string>
 </resources>
