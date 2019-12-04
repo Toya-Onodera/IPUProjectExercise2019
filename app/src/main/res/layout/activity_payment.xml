@@ -29,32 +29,32 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/rgChoosePaymentMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/tv_paymentCheck"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/addNewPaymentButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lvChooseItems">
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/rbForCash"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="RadioButton" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/rbForCreditCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="RadioButton" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/rbForPayPay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -62,23 +62,23 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/addNewPaymentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/tv_paymentCheck"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toEndOf="@+id/rgChoosePaymentMode"
         app:layout_constraintTop_toBottomOf="@+id/lvChooseItems" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/addNewPaymentTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2" />
+        app:layout_constraintBottom_toTopOf="@+id/addNewPaymentButton"
+        app:layout_constraintStart_toStartOf="@+id/addNewPaymentButton" />
 
     <ListView
         android:id="@+id/lvChooseItems"
