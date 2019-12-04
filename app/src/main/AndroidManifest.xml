@@ -11,9 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".selection.SelectionMainActivity"></activity>
         <activity android:name=".BreadListActivity" />
         <activity android:name=".SellectBreadActivity" />
+=======
+        <activity android:name=".PaymentActivity"></activity>
+>>>>>>> 6c6dc49796f544a63985de18f53708ccace9b0d8
         <activity android:name=".QRImageViewActivity" />
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"

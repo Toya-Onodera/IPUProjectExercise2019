@@ -18,18 +18,19 @@ class MainActivity : AppCompatActivity() {
 
         // 支払画面へ
         goPaymentPageButton.setOnClickListener {
-            Toast.makeText(this, "02", Toast.LENGTH_SHORT).show()
-        }
-
-        // 商品準備状況確認画面へ
-        goSamplePageButton.setOnClickListener {
-            val intent = Intent(this, QRImageViewActivity::class.java)
+            val intent = Intent(this, PaymentActivity::class.java)
             startActivity(intent)
         }
 
         // 商品準備状況確認画面へ
         goProgressPageButton.setOnClickListener {
             Toast.makeText(this, "03", Toast.LENGTH_SHORT).show()
+        }
+
+        // QR サンプル表示画面へ
+        goSamplePageButton.setOnClickListener {
+            val intent = Intent(this, QRImageViewActivity::class.java)
+            startActivity(intent)
         }
 
         // QR での商品識別画面へ
