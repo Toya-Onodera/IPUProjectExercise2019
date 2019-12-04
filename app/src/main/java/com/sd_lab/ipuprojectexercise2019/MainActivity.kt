@@ -3,10 +3,7 @@ package com.sd_lab.ipuprojectexercise2019
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
 import android.widget.Toast
-import com.google.zxing.integration.android.IntentIntegrator
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -37,22 +34,8 @@ class MainActivity : AppCompatActivity() {
 
         // QR での商品識別画面へ
         goQRItemSelectPageButton.setOnClickListener {
-//            IntentIntegrator(this).initiateScan()
             val intent = Intent(this, QRReaderActivity::class.java)
             startActivity(intent)
-//            Toast.makeText(this, "04", Toast.LENGTH_SHORT).show()
-
-//            try {
-//                val integrator = IntentIntegrator(this)
-//                integrator.setCameraId(0)
-//                integrator.setBeepEnabled(false)
-//                integrator.setBarcodeImageEnabled(true)
-//                integrator.initiateScan()
-//            }
-//
-//            catch (e: Exception) {
-//                Log.d("Error:", e.toString())
-//            }
         }
     }
 }

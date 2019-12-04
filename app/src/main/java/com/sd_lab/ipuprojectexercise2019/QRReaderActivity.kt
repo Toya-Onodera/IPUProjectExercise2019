@@ -3,17 +3,10 @@ package com.sd_lab.ipuprojectexercise2019
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
-import com.google.zxing.client.android.Intents
 
 import com.google.zxing.integration.android.IntentIntegrator
-
-import com.google.zxing.integration.android.IntentResult
-import kotlinx.android.synthetic.main.activity_qrreader.*
-import org.json.JSONException
-import org.json.JSONObject
 
 
 class QRReaderActivity : AppCompatActivity() {
