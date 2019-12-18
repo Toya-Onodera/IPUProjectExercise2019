@@ -1,4 +1,4 @@
-package com.sd_lab.ipuprojectexercise2019.selection
+package com.sd_lab.ipuprojectexercise2019
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,6 +11,6 @@ class SelectionMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_selection_main)
 
-        val listView = findViewById<ListView>(R.id.lvAll)
+//        val listView = findViewById<ListView>(R.id.lvAll)
     }
 }

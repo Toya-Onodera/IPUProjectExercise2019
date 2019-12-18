@@ -13,7 +13,8 @@ class MainActivity : AppCompatActivity() {
 
         // 商品選択画面へ
         goItemPageButton.setOnClickListener {
-            Toast.makeText(this, "01", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SelectionMainActivity::class.java)
+            startActivity(intent)
         }
 
         // 支払画面へ

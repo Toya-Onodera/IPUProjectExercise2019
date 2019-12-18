@@ -16,19 +16,4 @@
 
 
 <!--以下パンの選択-->
-    <string-array name="bread">
-        <item>カレーパン</item>
-        <item>クリームパン</item>
-        <item>メロンパン</item>
-        <item>クロワッサン</item>
-        <item>食パン</item>
-        <item>バターロール</item>
-        <item>くるみパン</item>
-        <item>チャバタサンド</item>
-        <item>塩バターロール</item>
-        <item>カンパーニュ</item>
-        <item>五穀の恵</item>
-        <item>レトロバゲット</item>
-        <item>フルーツライ</item>
-    </string-array>
 </resources>
