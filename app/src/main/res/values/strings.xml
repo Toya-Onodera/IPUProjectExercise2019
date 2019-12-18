@@ -5,9 +5,7 @@
     <string name="bt_goProgressPage">商品準備状況確認画面</string>
     <string name="bt_goQRSamplePage">QR サンプル</string>
     <string name="bt_goQRItemSelectPage">QRでの商品識別画面</string>
-<<<<<<< HEAD
 
-=======
     <string name="tv_payment_radioHeading">支払い方法</string>
     <string name="tv_payment_newPaymentHeading">別の支払い</string>
     <string name="tv_payment_chooseCheck">以上の内容で注文を確定してよろしいでしょうか</string>
@@ -15,5 +13,22 @@
     <string name="tv_payment_radio02">クレジットカード</string>
     <string name="tv_payment_radio03">PayPay</string>
     <string name="tv_payment_paymentButton">注文確定</string>
->>>>>>> 6c6dc49796f544a63985de18f53708ccace9b0d8
+
+
+<!--以下パンの選択-->
+    <string-array name="bread">
+        <item>カレーパン</item>
+        <item>クリームパン</item>
+        <item>メロンパン</item>
+        <item>クロワッサン</item>
+        <item>食パン</item>
+        <item>バターロール</item>
+        <item>くるみパン</item>
+        <item>チャバタサンド</item>
+        <item>塩バターロール</item>
+        <item>カンパーニュ</item>
+        <item>五穀の恵</item>
+        <item>レトロバゲット</item>
+        <item>フルーツライ</item>
+    </string-array>
 </resources>
