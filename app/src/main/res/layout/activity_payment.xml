@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <Button
+        android:id="@+id/paymentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/tv_payment_paymentButton"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_paymentCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tv_payment_chooseCheck"
+        app:layout_constraintBottom_toTopOf="@+id/paymentButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgChoosePaymentMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tv_paymentCheck"
+        app:layout_constraintEnd_toStartOf="@+id/addNewPaymentButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvChooseItems">
+
+        <RadioButton
+            android:id="@+id/rbForCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/tv_payment_radio01" />
+
+        <RadioButton
+            android:id="@+id/rbForCreditCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_payment_radio02" />
+
+        <RadioButton
+            android:id="@+id/rbForPayPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_payment_radio03" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/addNewPaymentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/tv_paymentCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rgChoosePaymentMode"
+        app:layout_constraintTop_toBottomOf="@+id/lvChooseItems" />
+
+    <TextView
+        android:id="@+id/addNewPaymentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_payment_newPaymentHeading"
+        app:layout_constraintBottom_toTopOf="@+id/addNewPaymentButton"
+        app:layout_constraintStart_toStartOf="@+id/addNewPaymentButton" />
+
+    <TextView
+        android:id="@+id/addRadioPaymentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_payment_radioHeading"
+        app:layout_constraintBottom_toTopOf="@+id/rgChoosePaymentMode"
+        app:layout_constraintStart_toStartOf="@+id/rgChoosePaymentMode" />
+
+    <ListView
+        android:id="@+id/lvChooseItems"
+        android:layout_width="wrap_content"
+        android:layout_height="420dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

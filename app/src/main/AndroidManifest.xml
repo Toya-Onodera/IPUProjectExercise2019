@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".StatusActivity"></activity>
+        <activity android:name=".PaymentActivity"></activity>
         <activity android:name=".QRImageViewActivity" />
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"

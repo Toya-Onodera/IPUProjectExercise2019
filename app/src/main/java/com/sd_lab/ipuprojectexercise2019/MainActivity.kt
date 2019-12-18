@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         // 支払画面へ
         goPaymentPageButton.setOnClickListener {
-            Toast.makeText(this, "02", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, PaymentActivity::class.java)
+            startActivity(intent)
         }
 
         // 商品準備状況確認画面へ
