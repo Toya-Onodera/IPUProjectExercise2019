@@ -15,5 +15,29 @@
     <string name="tv_payment_paymentButton">注文確定</string>
 
 
-<!--以下パンの選択-->
+    <string name="tv_buying">注文するもの</string>
+    <string-array name="bread_menu">
+        <item>もち姫</item>
+        <item>米粉カレーパン</item>
+        <item>塩バターロール</item>
+        <item>くるみパン</item>
+        <item>バゲット</item>
+        <item>チャバタサンド</item>
+        <item>カンパーニュ</item>
+        <item>バタール</item>
+        <item>五穀の恵み</item>
+        <item>フルーツライ</item>
+        <item>クリームパン</item>
+        <item>レトロバゲット</item>
+        <item>パン・ド・ミ</item>
+        <item>ベーコンエピ</item>
+        <item>めんたいフランス</item>
+        <item>ベーコン月見バーガー</item>
+        <item>あんぱん</item>
+        <item>チーズカレー</item>
+        <item>PANOPANOどうぶつえん</item>
+        <item>クロッカン</item>
+        <item>PANTOｶﾞｽﾊﾟﾁｮ</item>
+        <item>ﾐﾆｯﾂﾒｲﾄﾞ(ﾘﾝｺﾞ)</item>
+    </string-array>
 </resources>
