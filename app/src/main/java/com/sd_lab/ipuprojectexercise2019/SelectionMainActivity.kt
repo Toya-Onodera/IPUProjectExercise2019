@@ -1,5 +1,6 @@
 package com.sd_lab.ipuprojectexercise2019
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,7 @@ class SelectionMainActivity : AppCompatActivity() {
             boughtMenuArray.add(breadMenuArray!![position])
             boughtMenuText = ""
 
+            boughtMenuArray.sort()
             boughtMenuArray.forEachIndexed { i, e ->
                 boughtMenuText += if (i != 0) ", ${e}" else "${e}"
             }
@@ -34,12 +36,14 @@ class SelectionMainActivity : AppCompatActivity() {
             AlertDialog.Builder(this)
                 .setTitle("注文を確定してもよろしいでしょうか？")
                 .setMessage(boughtMenuText)
-                .setPositiveButton("OK", { d, w ->
-                    // TODO: 次のアクティビティに飛ばす
-                })
-                .setNegativeButton("No", { d, w ->
+                .setPositiveButton("OK") { d, w ->
+                    val intent = Intent(this, PaymentActivity::class.java)
+                    intent.putExtra("boughtMenu", boughtMenuText)
+                    startActivity(intent)
+                }
+                .setNegativeButton("No") { d, w ->
                     // 何もしない
-                })
+                }
                 .show()
         }
     }
