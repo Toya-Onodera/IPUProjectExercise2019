@@ -1,5 +1,6 @@
 package com.sd_lab.ipuprojectexercise2019
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -23,7 +24,8 @@ class PaymentActivity : AppCompatActivity() {
             Toast.makeText(this, "注文を確定しました", Toast.LENGTH_SHORT).show()
 
             // TODO: 待機画面に移行する
-//            setContentView(R.layout.)
+            val intent = Intent(this, StatusActivity::class.java)
+            startActivity(intent)
             finish()
         }
     }

@@ -40,6 +40,7 @@ class SelectionMainActivity : AppCompatActivity() {
                     val intent = Intent(this, PaymentActivity::class.java)
                     intent.putExtra("boughtMenu", boughtMenuText)
                     startActivity(intent)
+                    finish()
                 }
                 .setNegativeButton("No") { d, w ->
                     // 何もしない
