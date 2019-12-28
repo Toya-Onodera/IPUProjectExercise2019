@@ -3,7 +3,6 @@ package com.sd_lab.ipuprojectexercise2019
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +12,8 @@ class MainActivity : AppCompatActivity() {
 
         // 商品選択画面へ
         goItemPageButton.setOnClickListener {
-            Toast.makeText(this, "01", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SelectionMainActivity::class.java)
+            startActivity(intent)
         }
 
         // 支払画面へ
